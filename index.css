@@ -1,0 +1,80 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    background: #14214B;
+  }
+  
+  /* Estilo para los inputs */
+  input {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para los botones */
+  button {
+    padding: 10px;
+    width: 60%;
+    background-color: #007aff;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin: 20px auto; /* Esto los centra horizontalmente */
+    display: block;
+  }
+  
+  /* Efecto de hover para los botones */
+  button:hover {
+    background-color: #005bb5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo para el logo */
+  .logo {
+    width: 120px; /* Tamaño ajustado para la pantalla de inicio */
+    display: block;
+    margin: 30px auto 20px;
+  }
+  
+  /* Estilo para el título */
+  .titulo {
+    color: #ffffff; /* Color blanco */
+    font-size: 2em; /* Tamaño flexible */
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Estilo para el texto "¿Olvidaste tu contraseña?" */
+  .olvide {
+    text-align: center;
+    font-size: 14px;
+    color: #555; /* Gris suave */
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Media Query para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    .titulo {
+      font-size: 1.5em;
+    }
+  
+    .btn {
+      width: 80%; /* Botones más anchos para dispositivos móviles */
+      padding: 12px;
+    }
+  
+    .logo {
+      width: 100px; /* Logo más pequeño en dispositivos móviles */
+    }
+  }

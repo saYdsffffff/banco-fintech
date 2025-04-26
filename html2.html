@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Cuenta - Banco XYZ</title>
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <h1>¡Bienvenido!</h1>
+
+  <div class="container-cards">
+    <!-- Tarjeta para la cuenta principal -->
+    <div class="card">
+      <div class="card-header">
+        <p>Cuenta Principal</p>
+      </div>
+
+      <div class="saldo">
+        <p class="saldo-monto">$5,000.00</p> <!-- Primero muestra el monto -->
+        <p class="saldo-texto">Saldo</p> <!-- Luego muestra el texto "Saldo" -->
+        <span class="flecha" onclick="verMas('principal')">&#8594;</span> <!-- Flecha para la cuenta principal -->
+      </div>
+    </div>
+
+    <!-- Tarjeta para la cuenta secundaria -->
+    <div class="card">
+      <div class="card-header">
+        <p>Cuenta de Ahorros</p>
+      </div>
+
+      <div class="saldo">
+        <p class="saldo-monto">$0.00</p> <!-- Primero muestra el monto -->
+        <p class="saldo-texto">Saldo</p> <!-- Luego muestra el texto "Saldo" -->
+        <span class="flecha" onclick="verMas('ahorros')">&#8594;</span> <!-- Flecha para la cuenta de ahorros -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón de operaciones -->
+  <button class="btn-operaciones" onclick="irOperaciones()">Operaciones</button>
+
+  <script>
+    function irOperaciones() {
+      alert("Aquí irían las opciones de Operaciones");
+    }
+
+    function verMas(cuenta) {
+      if (cuenta === 'principal') {
+        alert("Mostrar más detalles de la Cuenta Principal...");
+      } else if (cuenta === 'ahorros') {
+        alert("Mostrar más detalles de la Cuenta de Ahorros...");
+      }
+    }
+  </script>
+</body>
+</html>
